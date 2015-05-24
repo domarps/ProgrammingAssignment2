@@ -1,7 +1,15 @@
-## Put comments here that give an overall description of what your
-## functions do
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#Matrix inversion is usually a costly computation and there may be some benefit to caching the inverse of a matrix rather than compute it repeatedly (there are also alternatives to matrix inversion that we will not discuss here). 
+#Your assignment is to write a pair of functions that cache the inverse of a matrix.
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#The assignment includes the following  functions:
 
-## Write a short comment describing this function
+#makeCacheMatrix: This function creates a special "matrix" object that can cache its inverse.
+#cacheSolve: 
+#1.This function computes the inverse of the special "matrix" returned by makeCacheMatrix above. 
+#2.If the inverse has already been calculated (and the matrix has not changed), then the cachesolve should retrieve the inverse from the cache.
+#3.Computing the inverse of a square matrix can be done with the solve function in R. 
+#4.For example, if X is a square invertible matrix, then solve(X) returns its inverse.
 
 makeCacheMatrix <- function(x = matrix()) 
 {
